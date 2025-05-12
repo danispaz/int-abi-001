@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">B.I. - Implantação Sistema Atua
+
+
+
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+É um serviço de BI especializado para empresas de transporte e logística que utilizam o TMS Atua. Através de dashboards interativos e automatizados, consolidamos dados operacionais, financeiros e estratégicos, proporcionando visão unificada e gestão eficiente.
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">ABI001</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Auditoria</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-question-circle icon"></i>Classificação BCG</label>
+      <div class="form-value">Inteligência de Dados</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ol data-start="662" data-end="1183">
+<li data-start="662" data-end="767" class="">
+<p data-start="665" data-end="767" class="">Identificação e levantamento dos requisitos de indicadores e métricas desejadas pela transportadora.</p>
+</li>
+<li data-start="768" data-end="848" class="">
+<p data-start="771" data-end="848" class="">Configuração do ambiente de Power B.I. e integração com o sistema TMS Atua.</p>
+</li>
+<li data-start="849" data-end="974" class="">
+<p data-start="852" data-end="974" class="">Desenvolvimento dos painéis personalizados (Comercial, Gestão de Frota, Gestão de Terceiros, DRE Gerencial, Financeiro).</p>
+</li>
+<li data-start="975" data-end="1044" class="">
+<p data-start="978" data-end="1044" class="">Validação dos painéis junto ao cliente, com ajustes necessários.</p>
+</li>
+<li data-start="1045" data-end="1103" class="">
+<p data-start="1048" data-end="1103" class="">Treinamento dos usuários para utilização dos painéis.</p>
+</li>
+<li data-start="1104" data-end="1183" class="">
+<p data-start="1107" data-end="1183" class="">Suporte técnico inicial para garantir o correto funcionamento dos painéis.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ul data-start="1227" data-end="1663">
+<li data-start="1227" data-end="1324" class="">
+<p data-start="1229" data-end="1324" class="">Falta de visibilidade sobre os principais indicadores de desempenho do transporte graneleiro.</p>
+</li>
+<li data-start="1325" data-end="1405" class="">
+<p data-start="1327" data-end="1405" class="">Dificuldade em identificar inconsistências e dados faltantes nos relatórios.</p>
+</li>
+<li data-start="1406" data-end="1481" class="">
+<p data-start="1408" data-end="1481" class="">Tomada de decisão baseada em informações dispersas ou pouco confiáveis.</p>
+</li>
+<li data-start="1482" data-end="1598" class="">
+<p data-start="1484" data-end="1598" class="">Necessidade de consolidar informações em tempo real para diferentes áreas (comercial, operacional e financeira).</p>
+</li>
+<li data-start="1599" data-end="1663" class="">
+<p data-start="1601" data-end="1663" class="">Falta de padronização na análise de resultados e desempenho.</p>
+</li>
+</ul>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ul data-start="1696" data-end="2020">
+<li data-start="1696" data-end="1767" class="">
+<p data-start="1698" data-end="1767" class="">Automação de processos e relatórios, economizando tempo e recursos.</p>
+</li>
+<li data-start="1768" data-end="1838" class="">
+<p data-start="1770" data-end="1838" class="">Visão clara e em tempo real dos principais indicadores do negócio.</p>
+</li>
+<li data-start="1839" data-end="1901" class="">
+<p data-start="1841" data-end="1901" class="">Identificação rápida de inconsistências e dados faltantes.</p>
+</li>
+<li data-start="1902" data-end="1947" class="">
+<p data-start="1904" data-end="1947" class="">Decisões mais acertivas e em tempo hábil.</p>
+</li>
+<li data-start="1948" data-end="2020" class="">
+<p data-start="1950" data-end="2020" class="">Controle aprimorado sobre as operações e finanças da transportadora.</p>
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ul data-start="2057" data-end="2469">
+<li data-start="2057" data-end="2126" class="">
+<p data-start="2059" data-end="2126" class="">Para transportadoras graneleiras que utilizam o sistema TMS Atua.</p>
+</li>
+<li data-start="2127" data-end="2199" class="">
+<p data-start="2129" data-end="2199" class="">Empresas que desejam otimizar a gestão de suas operações e finanças.</p>
+</li>
+<li data-start="2200" data-end="2298" class="">
+<p data-start="2202" data-end="2298" class="">Quando o cliente já possui dados estruturados, mas não consegue extrair insights estratégicos.</p>
+</li>
+<li data-start="2299" data-end="2389" class="">
+<p data-start="2301" data-end="2389" class="">Para empresas que enfrentam dificuldades em consolidar informações e gerar relatórios.</p>
+</li>
+<li data-start="2390" data-end="2469" class="">
+<p data-start="2392" data-end="2469" class="">Durante a implementação de uma gestão mais estratégica e orientada a dados.</p>
+</li>
+</ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Transformamos dados brutos do sistema TMS Atua em informações estratégicas, fornecendo painéis de Business Intelligence (B.I.) em Power B.I. que permitem que as transportadoras graneleiras acompanhem e otimizem seus processos em tempo real. Aumente a eficiência, reduza custos e tome decisões mais seguras com visualizações claras e personalizadas.
+
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Consultoria Empresarial - Planejamento Estratégico</td>
+            <td>O B.I. fornece dados essenciais para o planejamento.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Resultados Financeiros</td>
+            <td>Utiliza os dados do B.I. para análise financeira.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Diagnóstico Empresarial</td>
+            <td>O B.I. auxilia na análise dos pontos fortes e fracos da empresa.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Planejamento Orçamentário e Fluxo de Caixa</td>
+            <td>Dados do B.I. suportam o planejamento financeiro.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Valuation</td>
+            <td>Utiliza dados do B.I. para avaliação precisa.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Compliance Trabalhista e Previdenciário</td>
+            <td>Acompanhar indicadores de conformidade no B.I.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Frota</td>
+            <td>Monitoramento e controle da operação de transporte.</td>
+            <td>B.I.</td>
+        </tr>
+        <tr>
+            <td>Gestão de Terceiros</td>
+            <td>Controle de contratos e desempenho de terceiros.</td>
+            <td>B.I.</td>
+        </tr>
+        <tr>
+            <td>DRE Gerencial</td>
+            <td>Painel específico para controle financeiro.</td>
+            <td>B.I.</td>
+        </tr>
+        <tr>
+            <td>Controle Financeiro</td>
+            <td>Acompanhar receitas e despesas em tempo real.</td>
+            <td>B.I.</td>
+        </tr>
+        <tr>
+            <td>Auditoria Operacional</td>
+            <td>Validação dos dados e controle interno.</td>
+            <td>Auditoria</td>
+        </tr>
+        <tr>
+            <td>Auditoria Financeira</td>
+            <td>Verificação de consistência dos dados financeiros.</td>
+            <td>Auditoria</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real, Lucro Presumido </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Região Norte, Centro-Oeste, Sudeste e Sul.</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">A partir de R$10.000.000,00/mês.</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ul data-start="4638" data-end="4911">
+<li data-start="4638" data-end="4680" class="">
+<p data-start="4640" data-end="4680" class="">Acesso ao sistema TMS Atua da empresa.</p>
+</li>
+<li data-start="4681" data-end="4727" class="">
+<p data-start="4683" data-end="4727" class="">Lista de métricas e indicadores desejados.</p>
+</li>
+<li data-start="4728" data-end="4771" class="">
+<p data-start="4730" data-end="4771" class="">Informações financeiras e operacionais.</p>
+</li>
+<li data-start="4772" data-end="4855" class="">
+<p data-start="4774" data-end="4855" class="">Contato com os responsáveis por cada área (Comercial, Financeiro, Operacional).</p>
+</li>
+<li data-start="4856" data-end="4911" class="">
+<p data-start="4858" data-end="4911" class="">Dados de login e permissões de acesso ao Power B.I.</p>
+</li>
+</ul></div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ul data-start="4971" data-end="5047">
+<li data-start="4971" data-end="4997" class="">
+<p data-start="4973" data-end="4997" class="">Transporte graneleiro.</p>
+</li>
+<li data-start="4998" data-end="5047" class="">
+<p data-start="5000" data-end="5047" class="">Empresas com operações logísticas intensivas.</p>
+</li>
+</ul>       </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>“Não temos tempo para implementar isso.”</td>
+            <td>Percepção de que a implementação será demorada.</td>
+            <td>Esclarecer que o processo é ágil e adaptável.</td>
+        </tr>
+        <tr>
+            <td>“Já temos relatórios no nosso sistema.”</td>
+            <td>Acredita que os relatórios atuais são suficientes.</td>
+            <td>Demonstrar os painéis avançados do Power B.I. e o valor agregado.</td>
+        </tr>
+        <tr>
+            <td>“O investimento parece alto.”</td>
+            <td>Preocupação com o custo.</td>
+            <td>Mostrar o retorno financeiro com base na eficiência e economia.</td>
+        </tr>
+        <tr>
+            <td>“Não entendemos de B.I.”</td>
+            <td>Medo de não saber utilizar os painéis.</td>
+            <td>Garantir treinamento completo para a equipe.</td>
+        </tr>
+        <tr>
+            <td>“Nossos dados são confidenciais.”</td>
+            <td>Preocupação com segurança.</td>
+            <td>Explicar que o acesso é seguro e que os dados são protegidos.</td>
+        </tr>
+        <tr>
+            <td>“Só precisamos de relatórios básicos.”</td>
+            <td>Acredita que não precisa de B.I. avançado.</td>
+            <td>Explicar que o B.I. é flexível e pode ser adaptado.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                                               <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> Sócios e Proprietários de Empresas.</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional oferece o serviço de B.I. – Implantação Sistema Atua com especialização no setor de transporte e logística, automação avançada e atendimento consultivo, garantindo que o cliente tenha uma gestão clara e eficiente dos seus indicadores.
+
+Nosso diferencial está na conexão direta com o TMS Atua, desenvolvimento de dashboards personalizados, automação de relatórios e visualização interativa de dados operacionais, financeiros e estratégicos, assegurando tomada de decisão ágil, controle total e visão unificada da operação.
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
